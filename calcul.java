@@ -6,14 +6,13 @@ public class calcul {
         System.out.println("Menu principal de la calculatrice.");
         System.out.println("1 - Addition (+)");
         System.out.println("2 - Soustraction(-)");
-        System.out.println("3- Division (/)");
-        System.out.println("4 - Quitter");
+        System.out.println("3 - Quitter");
         System.out.print("Veuillez entrer votre choix : ");
         Scanner Sc = new Scanner(System.in);
 
             choix = Sc.nextInt();
 
-       if (choix!=4) {
+       if (choix!=3) {
            System.out.println("entrer votre premier nombre:");
            n1 = Sc.nextInt();
            System.out.print("entrer votre deuxieme nombre:");
@@ -30,10 +29,6 @@ public class calcul {
                 System.out.print("le resultat est:" + resultat);
                 break;
             case 3:
-                resultat=n1 / n2;
-                System.out.println("le resultat est:"+resultat);
-
-            case 4:
                     System.out.println("au revoir!");
                     break;
             default:
