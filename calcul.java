@@ -32,6 +32,9 @@ public class calcul {
                     System.out.println("au revoir!");
                     break;
             default:
+
+
+
                 System.out.println("choix invalid");
         }
     }
