@@ -1,17 +1,16 @@
 import java.util.Scanner;
 public class calcul {
-
     public static void main(String[] args) {
         int choix, n1=0, n2=0;
         double resultat;
         System.out.println("Menu principal de la calculatrice.");
-        System.out.println("1 - Addition (+)");
-        System.out.println("2 - Soustraction(-)");
+        System.out.println("1- Addition (+)");
+        System.out.println("2- Soustraction (-)");
         System.out.println("3- Multiplication (*)");
         System.out.println("4- Division (/)");
-        System.out.println("5- Puissance");
-        System.out.println("6 - Quitter");
-
+        System.out.println("5- Puissance (^)");
+        System.out.println("6- Racine carré");
+        System.out.println("7- Quitter");
         System.out.print("Veuillez entrer votre choix : ");
         Scanner Sc = new Scanner(System.in);
 
@@ -48,8 +47,17 @@ public class calcul {
                 resultat = Math.pow(n1, n2);
                 System.out.println("Le résultat de " + n1 + " élevé à la puissance " + n2 + " est : " + resultat);
                 break;
-
             case 6:
+                System.out.println("entrer votre nombre");
+                n1= Sc.nextInt();
+            if (n1 >= 0) {
+                resultat = Math.sqrt(n1);
+                System.out.println("La racine carrée de " + n1 + " est : " + resultat);
+            } else {
+                System.out.println("Erreur : La racine carrée d'un nombre négatif n'est pas définie.");
+            }
+            break;
+            case 7:
                     System.out.println("au revoir!");
                     break;
             default:
